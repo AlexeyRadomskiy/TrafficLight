@@ -20,20 +20,23 @@ class ViewController: UIViewController {
     @IBOutlet weak var changingLightButton: UIButton!
     
     private var currentLight = CurrentLight.red
+   
+    override func viewWillLayoutSubviews() {
+        redLightView.layer.cornerRadius = redLightView.frame.width / 2
+        yellowLightView.layer.cornerRadius = redLightView.frame.width / 2
+        greenLightView.layer.cornerRadius = redLightView.frame.width / 2
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         redLightView.backgroundColor = .systemRed
-        redLightView.layer.cornerRadius = 60
         redLightView.alpha = 0.3
         
         yellowLightView.backgroundColor = .systemYellow
-        yellowLightView.layer.cornerRadius = 60
         yellowLightView.alpha = 0.3
         
         greenLightView.backgroundColor = .systemGreen
-        greenLightView.layer.cornerRadius = 60
         greenLightView.alpha = 0.3
         
         changingLightButton.backgroundColor = .secondarySystemBackground
@@ -41,7 +44,6 @@ class ViewController: UIViewController {
         changingLightButton.layer.cornerRadius = 15
         changingLightButton.setTitle("START", for: .normal)
         changingLightButton.setTitleColor(.white, for: .normal)
-
     }
 
     @IBAction func changingLightButtonTapped() {
