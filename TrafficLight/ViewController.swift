@@ -66,6 +66,4 @@ class ViewController: UIViewController {
             currentLight = .red
         }
     }
-    
 }
-
