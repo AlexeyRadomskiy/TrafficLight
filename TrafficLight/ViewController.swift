@@ -20,30 +20,32 @@ class ViewController: UIViewController {
     @IBOutlet weak var changingLightButton: UIButton!
     
     private var currentLight = CurrentLight.red
-   
-    override func viewWillLayoutSubviews() {
-        redLightView.layer.cornerRadius = redLightView.frame.width / 2
-        yellowLightView.layer.cornerRadius = redLightView.frame.width / 2
-        greenLightView.layer.cornerRadius = redLightView.frame.width / 2
-    }
+    private let lightIsOn: CGFloat = 1
+    private let lightIsOff: CGFloat = 0.3
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         redLightView.backgroundColor = .systemRed
-        redLightView.alpha = 0.3
+        redLightView.alpha = lightIsOff
         
         yellowLightView.backgroundColor = .systemYellow
-        yellowLightView.alpha = 0.3
+        yellowLightView.alpha = lightIsOff
         
         greenLightView.backgroundColor = .systemGreen
-        greenLightView.alpha = 0.3
+        greenLightView.alpha = lightIsOff
         
         changingLightButton.backgroundColor = .secondarySystemBackground
         changingLightButton.tintColor = .gray
         changingLightButton.layer.cornerRadius = 15
         changingLightButton.setTitle("START", for: .normal)
         changingLightButton.setTitleColor(.white, for: .normal)
+    }
+    
+    override func viewWillLayoutSubviews() {
+        redLightView.layer.cornerRadius = redLightView.frame.width / 2
+        yellowLightView.layer.cornerRadius = redLightView.frame.width / 2
+        greenLightView.layer.cornerRadius = redLightView.frame.width / 2
     }
 
     @IBAction func changingLightButtonTapped() {
@@ -53,16 +55,16 @@ class ViewController: UIViewController {
         
         switch currentLight {
         case .red:
-            greenLightView.alpha = 0.3
-            redLightView.alpha = 1.0
+            greenLightView.alpha = lightIsOff
+            redLightView.alpha = lightIsOn
             currentLight = .yellow
         case .yellow:
-            redLightView.alpha = 0.3
-            yellowLightView.alpha = 1.0
+            redLightView.alpha = lightIsOff
+            yellowLightView.alpha = lightIsOn
             currentLight = .green
         case .green:
-            yellowLightView.alpha = 0.3
-            greenLightView.alpha = 1.0
+            yellowLightView.alpha = lightIsOff
+            greenLightView.alpha = lightIsOn
             currentLight = .red
         }
     }
