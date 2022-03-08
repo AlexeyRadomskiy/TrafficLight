@@ -32,7 +32,7 @@
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="TMc-Uz-YXv" secondAttribute="height" multiplier="15:49" id="kKA-Yt-npe"/>
+                                    <constraint firstAttribute="width" secondItem="TMc-Uz-YXv" secondAttribute="height" multiplier="15:49" id="xGf-mS-X5E"/>
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nEP-fX-bST">
@@ -50,12 +50,11 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <constraints>
-                            <constraint firstItem="TMc-Uz-YXv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="QXZ-dg-3Gb"/>
+                            <constraint firstItem="eyF-lD-qnp" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="8Q4-rG-0UV"/>
                             <constraint firstItem="nEP-fX-bST" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="fUt-1Q-rBI"/>
-                            <constraint firstItem="TMc-Uz-YXv" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.289855" id="oVq-pb-sbL"/>
-                            <constraint firstItem="TMc-Uz-YXv" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="rC4-rw-8uo"/>
-                            <constraint firstItem="nEP-fX-bST" firstAttribute="top" relation="greaterThanOrEqual" secondItem="TMc-Uz-YXv" secondAttribute="bottom" constant="20" id="vY2-Wf-Y6q"/>
+                            <constraint firstItem="TMc-Uz-YXv" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.479218" id="vDS-yM-qzp"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="nEP-fX-bST" secondAttribute="bottom" constant="40" id="vfM-19-GRD"/>
+                            <constraint firstItem="TMc-Uz-YXv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="yJu-bC-hUY"/>
                         </constraints>
                     </view>
                     <connections>
