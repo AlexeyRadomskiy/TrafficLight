@@ -56,15 +56,47 @@
 		6C0050E927D5FAE600822DAB /* TrafficLight */ = {
 			isa = PBXGroup;
 			children = (
-				6C0050EA27D5FAE600822DAB /* AppDelegate.swift */,
-				6C0050EC27D5FAE600822DAB /* SceneDelegate.swift */,
-				6C0050EE27D5FAE600822DAB /* ViewController.swift */,
-				6C0050F027D5FAE600822DAB /* Main.storyboard */,
-				6C0050F327D5FAE800822DAB /* Assets.xcassets */,
-				6C0050F527D5FAE800822DAB /* LaunchScreen.storyboard */,
-				6C0050F827D5FAE800822DAB /* Info.plist */,
+				6CA3431B27DDFD6700A06801 /* ViewControllers */,
+				6CA3431C27DDFD7000A06801 /* Storyboards */,
+				6CA3431D27DDFD7900A06801 /* Resources */,
+				6CA3431E27DDFD8B00A06801 /* App */,
 			);
 			path = TrafficLight;
+			sourceTree = "<group>";
+		};
+		6CA3431B27DDFD6700A06801 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				6C0050EE27D5FAE600822DAB /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		6CA3431C27DDFD7000A06801 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				6C0050F027D5FAE600822DAB /* Main.storyboard */,
+				6C0050F527D5FAE800822DAB /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		6CA3431D27DDFD7900A06801 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6C0050F327D5FAE800822DAB /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6CA3431E27DDFD8B00A06801 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				6C0050EA27D5FAE600822DAB /* AppDelegate.swift */,
+				6C0050EC27D5FAE600822DAB /* SceneDelegate.swift */,
+				6C0050F827D5FAE800822DAB /* Info.plist */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,7 +323,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = MAMAND5R9P;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TrafficLight/Info.plist;
+				INFOPLIST_FILE = TrafficLight/App/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Traffic Light";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -301,7 +333,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = AlexeyRadomskiy.TrafficLight;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -319,7 +351,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = MAMAND5R9P;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TrafficLight/Info.plist;
+				INFOPLIST_FILE = TrafficLight/App/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Traffic Light";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -329,7 +361,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = AlexeyRadomskiy.TrafficLight;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
